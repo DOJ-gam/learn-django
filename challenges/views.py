@@ -82,3 +82,35 @@ def monthly_challenge(request, month):
         return HttpResponse('Month not found')
     
     return HttpResponse(challenge_text)
+
+
+def monthly_challenge_by_number(request, month):
+    challenge_text = None
+    if month == 1:
+        challenge_text = 'Learn Python'
+    elif month == 2:
+        challenge_text = 'Learn a python Framework'
+    elif month == 3:
+        challenge_text = 'Build a huge project on python'
+    elif month == 4:
+        challenge_text = 'Deploy it online and make money'
+    elif month == 5:
+        challenge_text = 'Learn Javascript'
+    elif month == 6:
+        challenge_text = 'Learn React JS'
+    elif month == 7:
+        challenge_text = 'Build React Projecta'
+    elif month == 8:
+        challenge_text = 'Learn React Native'
+    elif month == 9:
+        challenge_text = 'Learn PHP'
+    elif month == 10:
+        challenge_text = 'Learn Laravel'
+    elif month == 11:
+        challenge_text = 'Build a microservice'
+    elif month == 12:
+        challenge_text = 'Enjoy!'
+    else:
+        return HttpResponse('Month not found')
+    
+    return HttpResponse(challenge_text)
