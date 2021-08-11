@@ -14,5 +14,6 @@ urlpatterns = [
     # path('oct', views.oct),
     # path('nov', views.nov),
     # path('dec', views.dec),
-    path('<month>', views.monthly_challenge),
+    path("<int:month>", views.monthly_challenge_by_number),
+    path("<str:month>", views.monthly_challenge),
 ]
