@@ -1,0 +1,8 @@
+Aftr creating project, We create a app
+
+python3 manage.py startapp challenges
+
+-create a view
+-create urls.py
+-Add urls there
+-connect it to the main app urls
